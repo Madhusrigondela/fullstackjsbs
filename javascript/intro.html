@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>intro</title>
+</head>
+<body>
+	<h1></h1>
+	<script>
+		var m=[{
+			'name':'Madhu',
+			'roll no':'471',
+			'college':'aec',
+			'Branch':'ECE'
+		},
+		{
+			'name':'sri',
+			'roll no':'471',
+			'college':'aec',
+			'Branch':'ECE'
+		},
+		{
+			'name':'anu',
+			'roll no':'1111',
+			'college':'aec',
+			'Branch':'ECE' 
+
+		}]
+		for (var i=0;i <m.length; i++){
+			var obj=m[i];
+			for (var key in obj){
+				console.log(obj[key]);
+				document.write(obj[key]);
+			}
+			document.write("<br>")
+		}
+	</script>
+
+</body>
+</html>
