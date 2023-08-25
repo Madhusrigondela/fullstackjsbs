@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task6</title>
+</head>
+<body>
+	<h2>Fibonacci sequence</h2>
+	<script type="text/javascript">
+		function fibonacciSequence(n) {
+		  let sequence=[0, 1];
+		  
+		  for (let i =2;i<n;i++) {
+		    sequence[i]=sequence[i-1]+sequence[i-2];
+		  }
+		  
+		  return sequence;
+		}
+
+		const givenNumber=10
+		const sequence=fibonacciSequence(givenNumber);
+		document.write(`Fibonacci sequence up to${givenNumber}: ${sequence.join(', ')}`);
+
+	</script>
+
+</body>
+</html>
